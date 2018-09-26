@@ -19,7 +19,7 @@ RUN \
     tar -C /usr/local -xzf go${GO_VER}.linux-amd64.tar.gz && \
     rm -f go${GO_VER}.linux-amd64.tar.gz && \
     mkdir -p ${GOPATH}/{src,bin,pkg} && \
-    git clone --depth 1 https://github.com/softonic/docker-kube-amqp-autoscale.git ${SRC_PATH} && \
+    git clone --depth 1 https://github.com/softonic/kube-amqp-autoscale.git ${SRC_PATH} && \
     cd ${SRC_PATH} && \
     make depend && \
     make test && \
